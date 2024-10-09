@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gym</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Gym</h1>
+        <nav>
+            <ul>
+                <li><a href="#workout">Workout Plan</a></li>
+                <li><a href="#diet">Diet Plan</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="workout">
+        <h2>Workout Plan</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Workout</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>Chest & Triceps</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Back & Biceps</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Legs & Shoulders</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>Chest & Abs</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>Back & Biceps</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>Legs & Forearms</td>
+            </tr>
+        </table>
+
+        <!-- Input field and button for getting exercises -->
+        <div>
+            <input type="text" id="day-input" placeholder="Enter a day (e.g., Monday)">
+            <button id="get-exercises">Get Exercises</button>
+        </div>
+
+        <div id="exercise-details" class="hidden">
+            <h3>Exercises</h3>
+            <p id="exercise-list"></p>
+        </div>
+    </section>
+
+    <section id="diet">
+        <h2>Diet Plan</h2>
+        <ul>
+            <li><strong>Breakfast:</strong> 2-3 eggs & home-cooked food</li>
+            <li><strong>Lunch:</strong> Grilled chicken with vegetable rice</li>
+            <li><strong>Dinner:</strong> Protein shake & banana shake</li>
+            <li><strong>Snacks:</strong> Nuts and yogurt as per your wish</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required placeholder="Enter your name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required placeholder="Enter your email">
+            <label for="message">Message:</label>
+            <textarea id="message" required placeholder="Enter your message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Gym. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
